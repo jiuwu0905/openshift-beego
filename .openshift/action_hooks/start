@@ -8,7 +8,7 @@ FMT="%a %b %d % %H:%M:%S GMT%z (%Z)"
 logf="$OPENSHIFT_DIY_DIR/logs/beego.log"
 
 
-vi $logf
+touch $logf
 
 
 pushd "$GOPATH/src/beego" > /dev/null

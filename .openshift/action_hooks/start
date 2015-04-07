@@ -7,11 +7,9 @@ FMT="%a %b %d % %H:%M:%S GMT%z (%Z)"
 
 logf="$OPENSHIFT_DIY_DIR/logs/beego.log"
 
-if[ -f "$logf" ]; then
-echo "文件存在"
-else 
-vi logf
-fi
+
+vi $logf
+
 
 pushd "$GOPATH/src/beego" > /dev/null
 {

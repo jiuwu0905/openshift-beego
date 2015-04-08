@@ -7,9 +7,11 @@ FMT="%a %b %d % %H:%M:%S GMT%z (%Z)"
 
 logf="$OPENSHIFT_DIY_DIR/logs/beego.log"
 
-
+pwd
+cd $OPENSHIFT_DIY_DIR
+mkdir logs
 touch $logf
-
+pwd
 
 pushd "$GOPATH/src/beego" > /dev/null
 {
